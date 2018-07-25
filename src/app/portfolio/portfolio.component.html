@@ -1,0 +1,11 @@
+<h5>Oh boy. Est-ce que j'ai vraiment cr&eacute;e une page portfolio? Franchement, aucune id&eacute;e de ce que je vais bien foutre l&agrave;-dedans. 
+Une page portfolio c'est pour les gens qui ont du skill, pas les gens useless comme moi. Qu'est-ce j'ai foutu bordel? Ca fout mal l&agrave;. Pff, tfason ce n'est jamais qu'un &eacute;chec de plus. Ca va vraiment pas changer l'opinion des gens sur moi wesh.</h5>
+
+<h2>My projects - retrieved dynamically using a service</h2>
+<ul class="projects">
+	<li *ngFor="let project of projects" 
+		[class.selected]="project === selectedProject"
+		(click)="onSelect(project)">
+		{{project.name}} ({{project.language}})
+	</li>
+</ul>
